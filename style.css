@@ -1,3 +1,10 @@
+[class*="col-"] {
+    width: 100%;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(font/Roboto-Regular.ttf);
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -15,7 +22,7 @@ header{
 	background-color: #585858;
 	font-family: Roboto;
 	width: 100%;
-	height: 140px;
+	height: 120px;
 }
 #logo{
 	float: left;
@@ -23,7 +30,7 @@ header{
 	padding-top: 40px;
 }
 #logo p{
-	color: #EEAD0E;
+	color: #ebcb80;
 	font-size: 35px;
 }
 #menu{
@@ -36,9 +43,12 @@ header{
 }
 #menu ul li a {
 	color: white;
-	margin-right: 30px;
+	margin-right: 25px;
 	font-size: 18px;
 	text-decoration: none;
+}
+#menu ul li a:hover{
+	color: #ebcb80;
 }
 #menu ul li button{
 	color: white;
@@ -48,18 +58,22 @@ header{
 	width: 160px;
 	height: 40px;
 }
+#menu ul li button:hover{
+	color: #ebcb80;
+}
 
 #banner{
 	background:url("img/banner.png") no-repeat;
-	width:100%;
+	width: 100%;
 	height: 500px;
 	line-height: 60px;
-	text-align:center;
-	padding-top:180px;
+	text-align: center;
+	padding-top: 180px;
 }
 #banner h1{
-	font-size:50px;
-	font-weight:100;
+	font-size: 40px;
+	font-weight: 100;
+	color: #585858;
 }
 #banner input[type = "email"]{
     border-radius: 6px;
@@ -68,6 +82,7 @@ header{
     width: 240px;
     height: 40px;
     margin: 20px;
+    padding-left: 10px;
 }
 
 #banner input[type = "submit"]{
@@ -76,6 +91,9 @@ header{
 	border: 1px solid;
 	width: 180px;
 	height: 40px;
+}
+#banner input[type = "submit"]:hover{
+	color:#585858;
 }
 #banner ul li{
 	display: inline-block;
@@ -93,8 +111,9 @@ header{
 	padding:50px;
 }
 #listteam h1{
-	font-size:50px;
+	font-size:40px;
 	font-weight:100;
+	color: #585858;
 }
 #boxes{
 	display:inline-flex;
@@ -116,6 +135,7 @@ header{
 	font-size:50px;
 	font-weight:100;
 	font-size:18px;
+	color: #585858;
 }
 #information p{
 	font-size: 15px;
@@ -134,8 +154,9 @@ header{
 	padding:50px;
 }
 #planshow h1{
-	font-size:50px;
+	font-size:40px;
 	font-weight:100;
+	color: white;
 }
 #planshow #tag{
 	width:28%;
@@ -149,7 +170,7 @@ header{
 	border-radius:5px;
 }
 #tag h1{
-	color:#EEAD0E;
+	color:#ebcb80;
 	font-size:18px;
 	font-weight:400;
 }
@@ -236,10 +257,12 @@ header{
 #noirshow img{
 	border:4px solid #EEAD0E;
 	border-radius:50%;
+
 }
 #noirshow h1{
 	margin-top: 20px;
 	font-size:20px;
+	color: #585858;
 }
 #noirshow p{
 	margin-top: 20px;
@@ -252,7 +275,7 @@ header{
 	padding:30px;
 }
 #advantageshow h1{
-	font-size:50px;
+	font-size:40px;
 	font-weight:100;
 	color: white;
 }
@@ -277,7 +300,7 @@ header{
 	padding:30px 10px 20px;
 }
 #advantageshow .tag h1{
-	color:#EEAD0E;
+	color:#ebcb80;
 	font-size:18px;
 	font-weight:400;
 }
@@ -312,8 +335,9 @@ header{
 	padding:30px;
 }
 #places h1{
-	font-size:50px;
+	font-size:40px;
 	font-weight:100;
+	color: #585858;
 }
 #places .list{
 	text-align: center;
@@ -323,51 +347,51 @@ header{
 	display: inline-block;
 }
 #places .list ul li a {
-	color: #000000;
+	color: #585858;
 	margin-right: 30px;
 	font-size: 16px;
 	text-decoration: none;
 }
-#places .listimg ul li{
+#places .listimg .image{
 	width:28%;
 	display: inline-block;
 	text-decoration: none;
-	padding:20px;
+	margin: 10px 0 7px 0;
 }
 
 
 #sign_up{
-	background:url("img/account.png") no-repeat;
-	width:100%;
+	background: url("img/account.png") no-repeat;
+	width: 100%;
 	height: 500px;
-	font-family:Roboto;
-	text-align:center;
-	padding:40px;
+	font-family: Roboto;
+	text-align: center;
+	padding-top: 60px;
 }
 #sign_up h1{
 	color: white;
-	font-size:50px;
-	font-weight:100;
+	font-size: 40px;
+	font-weight: 100;
 }
 #sign_up form{
 	background: #585858;
-	width: 320px;
-	height: 350px;
-	border-radius:5px;
+	width: 28%;
+	height: 300px;
+	border-radius: 5px;
 	line-height: 50px;
 	margin: auto;
-	margin-top: 25px;
-	padding:30px 10px 20px;
+	margin-top: 40px;
+	padding:25px 10px 20px;
 }
 #sign_up form h1{
-	color:#EEAD0E;
+	color:#ebcb80;
 	font-size:18px;
 	font-weight:400;
 }
 #sign_up input[type = "email"]{
  	border-radius: 5px;
  	border: 1px solid #585858;
- 	margin-top: 20px;
+ 	margin-top: 10px;
  	height: 18px;
  	width: 220px;
  	padding: 10px;
@@ -375,13 +399,13 @@ header{
 #sign_up input[type = "password"]{
  	border-radius: 5px;
  	border: 1px solid #585858;
- 	margin-top: 20px;
+ 	margin-top: 10px;
  	height: 18px;
  	width: 220px;
  	padding: 10px;
 }
 #sign_up form p a{
-	color: #EEAD0E;
+	color: #ebcb80;
 }
 #sign_up form button{
 	width:180px;
@@ -392,39 +416,39 @@ header{
 }
 
 
-#contact{
-	font-family:Roboto;
-	height:auto;
-
+#contact-us{
+	font-family: Roboto;
+	height: auto;
 	padding:30px;
 }
-#contact h1{
-	font-size:50px;
+#contact-us h1{
+	font-size:40px;
 	font-weight:100;
+	color: #585858;
 	text-align:center;
 }
-#contact .touch{
+#contact-us .touch{
 	margin-top: 30px;
     height: 300px;
     float: left;
     width: 220px;
     text-align: left;
 }
-#contact .touch h1{
+#contact-us .touch h1{
 	font-size:20px;
 	font-weight:500;
 	text-align: left;
 }
-#contact .touch p{
+#contact-us .touch p{
 	font-size: 16px;
 	margin-top: 20px;
 }
-#contact .touch p img{
+#contact-us .touch p img{
  	text-align: left;
  	margin-right: 10px;
 }
 
-#contact form {
+#contact-us form {
     height: 400px;
     float: left;
     width: 550px;
@@ -435,25 +459,24 @@ header{
 	text-align: center;
 	line-height: 20px;
  }
-#contact input[type = "text"]{
- 	border-radius: 5px;
- 	
- 	height: 18px;
- 	width: 150px;
- 	padding: 10px;
-}
-#contact input[type = "email"]{
+#contact-us input[type = "text"]{
  	border-radius: 5px;
  	height: 18px;
  	width: 150px;
  	padding: 10px;
 }
-#contact input[type = "comment"] {
+#contact-us input[type = "email"]{
+ 	border-radius: 5px;
+ 	height: 18px;
+ 	width: 150px;
+ 	padding: 10px;
+}
+#contact-us input[type = "comment"] {
     width: 80%;
     height: 150px;
     border-radius: 5px;
 }
-#contact form button{
+#contact-us form button{
 	width:180px;
 	padding:15px;
 	border:1px solid #EEAD0E;
@@ -462,26 +485,26 @@ header{
 	margin-top: 40px;
 }
 
-#contact .creditshow{
+#contact-us .creditshow{
  	height: 200px;
  	float: left;
  	width: 260px;
  	margin-left: 45px;
  	margin-top: 25px;
  }
-#contact .creditshow h1{
+#contact-us .creditshow h1{
 	font-size:20px;
 	font-weight:500;
 	text-align: left;
 }
-#contact .creditshow p{
+#contact-us .creditshow p{
 	font-size: 16px;
 	margin-top: 20px;
 	line-height: 15px;
 	text-align: left;
 }
 
-#contact .followshow{
+#contact-us .followshow{
  	height: 200px;
  	float: left;
  	width: 260px;
@@ -489,12 +512,12 @@ header{
  	margin-top: 15px;
 
 }
-#contact .followshow h1{
+#contact-us .followshow h1{
 	font-size:20px;
 	font-weight:500;
 	text-align: left;
 }
-#contact .followshow img{
+#contact-us .followshow img{
 	height: 90px;
 	width: 130px;
 }
@@ -519,7 +542,7 @@ footer #contact_us{
 }
 footer h1{
 	color: white;
-	font-size:25px;
+	font-size:20px;
 	padding-bottom:20px;
 }
 footer p{
